@@ -20,6 +20,7 @@
             "outputPath": "dist/reservation",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/Seat-Bookings/",
             "polyfills": [
               "zone.js"
             ],
@@ -98,6 +99,7 @@
         }
       }
     }
+    
   },
   "cli": {
     "analytics": "e317bcec-1e1c-4614-acb4-5b5681ccfce4"
