@@ -1,0 +1,36 @@
+.seat-map-container {
+    text-align: center;
+  }
+  
+  .seat-grid {
+    display: grid;
+    grid-template-columns: auto repeat(7, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .seat {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .seat.available {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .seat.booked {
+    background-color: #F44336;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .row-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }

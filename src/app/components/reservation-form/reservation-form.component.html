@@ -1,0 +1,21 @@
+<div class="reservation-container">
+  <h2>Train Seat Reservation</h2>
+    
+  <div class="input-section">
+    <label for="numSeats">Number of Seats (1-7):</label>
+    <input 
+      type="number" 
+      id="numSeats" 
+      [(ngModel)]="numSeats" 
+      min="1" 
+      max="7"
+    >
+    <button (click)="reserveSeats()">Reserve Seats</button>
+  </div>
+
+  <div *ngIf="bookingError" class="error-message">
+    {{ bookingError }}
+  </div>
+
+  <app-booked-seats [bookedSeats]="bookedSeats"></app-booked-seats>
+</div>

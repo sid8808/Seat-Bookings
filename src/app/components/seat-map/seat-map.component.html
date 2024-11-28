@@ -1,0 +1,18 @@
+<div class="seat-map-container">
+  <h2>Train Coach Seat Map</h2>
+  <div class="seat-grid">
+    <ng-container *ngFor="let seat of seats; let i = index">
+      <div 
+        *ngIf="i % 7 === 0" 
+        class="row-label">
+        Row {{ seat.rowNumber }}
+      </div>
+      <div 
+        class="seat" 
+        [ngClass]="getSeatClass(seat)"
+        (click)="seat.isBooked = false">
+        {{ seat.seatNumber }}
+      </div>
+    </ng-container>
+  </div>
+</div>

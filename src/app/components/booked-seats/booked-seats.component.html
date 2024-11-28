@@ -1,0 +1,17 @@
+<div class="booked-seats-container">
+    <h2>Booked Seats</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Row</th>
+          <th>Seat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let seat of bookedSeats">
+          <td>{{ seat.rowNumber }}</td>
+          <td>{{ seat.seatNumber }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
